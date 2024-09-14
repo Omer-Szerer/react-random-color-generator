@@ -1,5 +1,5 @@
 import randomColor from 'randomcolor';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 export default function RandomColorControl() {
   const [color, setColor] = useState(randomColor);
@@ -46,7 +46,7 @@ export default function RandomColorControl() {
   );
 }
 
-//ChatGPT version that converts the text inside to dark/light in accodring to the background color
+// ChatGPT version that converts the text inside to dark/light in according to the background color
 
 // import randomColor from 'randomcolor';
 // import React, { useEffect, useState } from 'react';
