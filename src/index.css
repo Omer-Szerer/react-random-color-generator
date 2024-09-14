@@ -1,8 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
 }
 
-.color-container {
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,8 +14,15 @@ h1 {
   color: hsl(0, 0%, 30%);
 }
 
+p {
+  font-family: monospace;
+  color: hsl(0, 0%, 30%);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 .color-display {
-  width: 500px;
+  width: 600px;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -23,11 +30,37 @@ h1 {
   border: solid 2px hsl(0, 0%, 80%);
   border-radius: 25px;
   margin-bottom: 25px;
-  transition: 0.25s ease;
+  transition: background-color 0.5s ease;
 }
 
-p {
+.button {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  border: none;
+  padding: 15px 45px;
+  border-radius: 15px;
   color: hsl(0, 0%, 30%);
-  font-size: 2rem;
-  text-align: center;
+  background-color: hsl(0, 0%, 90%);
+  transition: background-color 0.5s ease;
+}
+
+.button:hover {
+  background-color: hsl(0, 0%, 50%);
+  color: white;
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 30%);
+  font-weight: lighter;
+}
+
+.luminosity-input {
+  margin-right: 10px;
 }

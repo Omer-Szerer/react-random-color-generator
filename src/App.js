@@ -1,7 +1,7 @@
-import ColorContainer from './ColorContainer';
+import RandomColorGenerator from './RandomColorGenerator';
 
 function App() {
-  return <ColorContainer />;
+  return <RandomColorGenerator />;
 }
 
 export default App;

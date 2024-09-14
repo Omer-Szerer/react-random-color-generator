@@ -18,12 +18,16 @@ export default function RandomColorControl() {
         <p>Generated Color: {color}</p>
       </div>
 
-      <button onClick={() => setColor(randomColor(parameters))}>
+      <button
+        className="button"
+        onClick={() => setColor(randomColor(parameters))}
+      >
         Generate
       </button>
 
+      <h3>Want more control?</h3>
+
       <div className="inputs">
-        <h>Want more control?</h>
         <input
           value={luminosity}
           onChange={(event) => setLuminosity(event.target.value)}

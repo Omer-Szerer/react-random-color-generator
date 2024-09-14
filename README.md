@@ -13,6 +13,6 @@ Stretch:
 [x] Add "Want more control?" text and the possibility to specify hue and luminosity
 [x] Add placeholder text to make it clear (e.g. red/green/blue and Light/Dark)
 [ ] Use a CSS-in-JS library for all styling (eg. Emotion or Styled Components)
-[ ] Center align all the different elements (like in the Figma file)
-[ ] Transition smoothly between the colors as they change
+[x] Center align all the different elements (like in the Figma file)
+[x] Transition smoothly between the colors as they change
 [ ] Allow user to specify size for the color box
