@@ -1,18 +1,26 @@
 import randomColor from 'randomcolor';
 import React, { useState } from 'react';
 
-function ColorContainer() {
-  const random = randomColor();
-  const [color, setColor] = useState(random);
+export default function ColorContainer() {
+  const color = randomColor();
+
+  console.log(color);
 
   return (
-    <div className="color-container">
+    <div className="main-container">
       <h1>Random Color Generator</h1>
+
       <div className="color-display" style={{ backgroundColor: color }}>
         <p>Generated Color: {color}</p>
       </div>
+
+      <button
+        onClick={() => {
+          const newColor = randomColor();
+        }}
+      >
+        Generate
+      </button>
     </div>
   );
 }
-
-export default ColorContainer;
