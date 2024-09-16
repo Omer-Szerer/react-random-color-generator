@@ -15,7 +15,7 @@ export default function RandomColorControl() {
     <div className="main-container">
       <h1>Random Color Generator 🎨</h1>
 
-      <div className="color-display" style={{ backgroundColor: color }}>
+      <div className="color-display" style={{ backgroundColor: { color } }}>
         <div>Generated Color: {color}</div>
       </div>
 
